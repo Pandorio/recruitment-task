@@ -22,19 +22,68 @@ main {
 .rhombus {
     position: absolute;
     background: #ff0000;
-    width: 150px;
-    height: 150px;
+    width: 7.5rem;
+    aspect-ratio: 1;
     transform-origin: top left;
     transform: rotate(45deg);
     border: solid 5px black;
 }
 
 .first {
-    top: 0;
-    left: 17rem;
+    top: 0.5rem;
+    left: 15rem;
 }
 
 .second {
-    top: 9rem;
+    top: 7.5rem;
     left: 7rem;
+}
+
+.content{
+    width: 100%;
+    height: 100%;
+    padding: 22rem 2rem 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
+}
+
+.equal-circle{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.equal-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.line{
+    width: 8rem;
+    height: 1rem;
+    background: #0001ff;
+    border: solid 4px black;
+}
+
+.circle{
+    width: 6rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: solid 4px black;
+    background: #008080;
+}
+
+
+@media (min-width:584px) {
+}
+
+@media (min-width:901px) {  
+    .content {
+        align-items: center; 
+        justify-content: space-between; 
+        padding: 8rem 10rem 0 10rem; 
+    }
 }
