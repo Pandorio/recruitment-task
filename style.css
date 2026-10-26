@@ -4,17 +4,26 @@
     box-sizing: border-box;
 }
 
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    font-size: 2rem;
+}
+
 header {
     background: #818100;
     height: 12vh;
-    border: solid 8px black;
+    border: solid 4px black;
 }
+
 
 main {
     position: relative;
     background: #008000;
     height: 88vh; 
-    border: solid 5px black;
+    border: solid 4px black;
     border-top: none;
     overflow: hidden;
 }
@@ -26,7 +35,7 @@ main {
     aspect-ratio: 1;
     transform-origin: top left;
     transform: rotate(45deg);
-    border: solid 5px black;
+    border: solid 4px black;
 }
 
 .first {
@@ -47,12 +56,14 @@ main {
     flex-direction: column;
     align-items: flex-start;
     gap: 0.5rem;
+    transition: all 0.4s ease;
 }
 
 .equal-circle{
     display: flex;
     align-items: center;
     gap: 2rem;
+    transition: all 0.4s ease;
 }
 
 .equal-container{
@@ -78,42 +89,48 @@ main {
 
 .abc-rectangle{
     width: 11.5rem;
-    height: 26rem;
+    height: 30rem;
     background: #0000ff;
-    font-size: 2rem;
     padding-top: 2rem;
     justify-content: center;
-    font-family: 'Arial';
     display: flex;
     border: solid 4px black;
     margin-left: 3rem;
+    transition: all 0.4s ease;
 }
 
-@media (min-width:584px) {
+@media (min-width:583px) {
 
     .content{
         flex-direction: row;
-        align-items: flex-end;
+        align-items: flex-start;
         justify-content: space-between;
-        padding-bottom: 10rem;
+        padding: 2rem 3rem 3rem 2rem;
     }
     
     .abc-rectangle{
         background: #c83737;
         margin-left: 0;
     }
+
+    .equal-circle{
+        padding-top: 20rem;
+    }
+
 }
 
 @media (min-width:901px) {  
     .content {
         align-items: flex-start; 
-        justify-content: space-around;
-        padding: 2rem 5rem 0 25rem; 
+        padding: 2rem 2rem 0 25rem; 
     }
 
     .equal-circle{
         padding-top:5rem;
+        margin-left: auto;
+        margin-right: auto;
     }
+
     .abc-rectangle{
         background: #ffffff;
     }
