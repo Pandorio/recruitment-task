@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: #818100;
+    height: 10vh;
+    border: solid 5px black;
+}
+
+main {
+    background: #008000;
+    height: 90vh; 
+    border: solid 4px black;
+    border-top: none;
+}
