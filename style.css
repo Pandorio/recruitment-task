@@ -6,13 +6,35 @@
 
 header {
     background: #818100;
-    height: 10vh;
-    border: solid 5px black;
+    height: 12vh;
+    border: solid 8px black;
 }
 
 main {
+    position: relative;
     background: #008000;
-    height: 90vh; 
-    border: solid 4px black;
+    height: 88vh; 
+    border: solid 5px black;
     border-top: none;
+    overflow: hidden;
+}
+
+.rhombus {
+    position: absolute;
+    background: #ff0000;
+    width: 150px;
+    height: 150px;
+    transform-origin: top left;
+    transform: rotate(45deg);
+    border: solid 5px black;
+}
+
+.first {
+    top: 0;
+    left: 17rem;
+}
+
+.second {
+    top: 9rem;
+    left: 7rem;
 }
