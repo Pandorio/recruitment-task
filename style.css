@@ -1,10 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     height: 100vh;
     width: 100vw;
     overflow: hidden;
@@ -18,11 +18,10 @@ header {
     border: solid 4px black;
 }
 
-
 main {
     position: relative;
     background: #008000;
-    height: 88vh; 
+    height: 88vh;
     border: solid 4px black;
     border-top: none;
     overflow: hidden;
@@ -48,7 +47,7 @@ main {
     left: 7rem;
 }
 
-.content{
+.content {
     width: 100%;
     height: 100%;
     padding: 21rem 2rem 2rem 2rem;
@@ -59,27 +58,27 @@ main {
     transition: all 0.4s ease;
 }
 
-.equal-circle{
+.equal-circle {
     display: flex;
     align-items: center;
     gap: 2rem;
     transition: all 0.4s ease;
 }
 
-.equal-container{
+.equal-container {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
 
-.line{
+.line {
     width: 8rem;
     height: 1rem;
     background: #0001ff;
     border: solid 4px black;
 }
 
-.circle{
+.circle {
     width: 6rem;
     aspect-ratio: 1;
     border-radius: 50%;
@@ -87,7 +86,7 @@ main {
     background: #008080;
 }
 
-.abc-rectangle{
+.abc-rectangle {
     width: 11.5rem;
     height: 30rem;
     background: #0000ff;
@@ -100,38 +99,35 @@ main {
 }
 
 @media (min-width:583px) {
-
-    .content{
+    .content {
         flex-direction: row;
         align-items: flex-start;
         justify-content: space-between;
         padding: 2rem 3rem 3rem 2rem;
     }
-    
-    .abc-rectangle{
+
+    .abc-rectangle {
         background: #c83737;
         margin-left: 0;
     }
 
-    .equal-circle{
+    .equal-circle {
         padding-top: 20rem;
     }
-
 }
 
-@media (min-width:901px) {  
+@media (min-width:901px) {
     .content {
-        align-items: flex-start; 
-        padding: 2rem 2rem 0 25rem; 
+        padding: 2rem 2rem 0 20rem;
     }
 
-    .equal-circle{
-        padding-top:5rem;
+    .equal-circle {
+        padding-top: 5rem;
         margin-left: auto;
         margin-right: auto;
     }
 
-    .abc-rectangle{
+    .abc-rectangle {
         background: #ffffff;
     }
 }
